@@ -22,7 +22,6 @@ function Home() {
 
       <div className="poster">
         <Carousel 
-        // animationHandler="fade"
           showThumbs={false}
           autoPlay={true}
           transitionTime={3}
