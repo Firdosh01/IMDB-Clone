@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { FiStar } from "react-icons/fi";
-
+import './home.css'
 
 function Home() {
 
@@ -21,12 +21,14 @@ function Home() {
     <>
 
       <div className="poster">
-        <Carousel
+        <Carousel 
+        // animationHandler="fade"
           showThumbs={false}
           autoPlay={true}
           transitionTime={3}
           infiniteLoop={true}
           showStatus={false}
+          showArrows={false}
         >
           {
             popularMovies.map((movie) => (
